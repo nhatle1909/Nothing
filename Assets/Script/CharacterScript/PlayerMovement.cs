@@ -1,19 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.InputSystem;
 namespace Assets.Script
 {
     public class PlayerMovement : MonoBehaviour
     {
         // This script will be refactor soon
-        public InputManager inputSystem;
         private Transform mainCam;
         public Rigidbody rb;
 
-        [SerializeField] private float speedMultiplier ;
+        [SerializeField] private float speedMultiplier = 0.9f;
         [SerializeField] private float UpperLimit = -40f;
         [SerializeField] private float BottomLimit = 70f;
         [SerializeField] private float mouseSensitivity = 20f;
@@ -21,7 +15,7 @@ namespace Assets.Script
         private Vector3 moveDirection;
         void Start()
         {
-            inputSystem = GetComponent<InputManager>();
+
             mainCam = Camera.main.transform;
             rb = GetComponent<Rigidbody>();
         }
@@ -30,7 +24,7 @@ namespace Assets.Script
         void FixedUpdate()
         {
             Player_Move();
-           
+
         }
         private void LateUpdate()
         {
@@ -38,16 +32,17 @@ namespace Assets.Script
         }
         public void Player_Move()
         {
-            
-            speedMultiplier = inputSystem.Running ? 1.2f : 0.9f;
 
-            float xAxis = inputSystem.Move.x * speedMultiplier;
-            float yAxis = inputSystem.Move.y * speedMultiplier;
+            //speedMultiplier = InputManager.instance.Running ? 1.2f : 0.9f;
+
+            float xAxis = InputManager.instance.Move.x * speedMultiplier;
+            float yAxis = InputManager.instance.Move.y * speedMultiplier;
 
             moveDirection = new Vector3(xAxis, 0f, yAxis);
 
             rb.velocity = transform.TransformVector(moveDirection);
         }
+
         public void CameraMove()
         {
             // Lock cursor in center of screen
