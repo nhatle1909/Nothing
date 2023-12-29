@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using UnityEngine;
 
 namespace Assets.Script
@@ -7,16 +6,18 @@ namespace Assets.Script
     public class EventManager : MonoBehaviour
     {
         public event Action OpenDoor;
-        public void DoThing()
+        public static EventManager instance;
+        private void Awake()
+        {
+            instance = this;
+        }
+        public void OpenDoorTrigger()
         {
             OpenDoor?.Invoke();
         }
         // Use this for initialization
-        void Start()
-        {
 
-        }
 
-       
+
     }
 }
