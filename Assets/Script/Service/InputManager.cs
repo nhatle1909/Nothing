@@ -13,11 +13,14 @@ namespace Assets.Script
         public Vector3 Look { get; private set; }
         public bool Interact { get; private set; }
         public bool Running { get; private set; }
+        public bool EscSetting { get; private set; }
 
         private InputActionMap _currentMap;
         private InputAction _moveAction;
         private InputAction _lookAction;
         private InputAction _runningAction;
+        private InputAction _interactAction;
+        private InputAction _escAction;
         private void Awake()
         {
             if (instance == null)
@@ -29,38 +32,61 @@ namespace Assets.Script
             _moveAction = _currentMap.FindAction("Move");
             _lookAction = _currentMap.FindAction("Look");
             _runningAction = _currentMap.FindAction("Running");
+            _interactAction = _currentMap.FindAction("Interact");
+            _escAction = _currentMap.FindAction("System");
 
             _moveAction.performed += onMove;
             _lookAction.performed += onLook;
+            _runningAction.performed += onRunning;
+            _interactAction.performed += onInteract;
+            _escAction.performed += onSystemSetting;
 
-            
-            _runningAction.canceled += onRunning;
-            _lookAction.canceled += onLook;
+
+            _runningAction.canceled += outRunning;
+            _interactAction.canceled += outRunning;
+         
+      
 
         }
         public void onMove(InputAction.CallbackContext context)
         {
             Move = context.ReadValue<Vector3>();
-            Debug.Log("Moving");
+         
         }
         public void onRunning(InputAction.CallbackContext context)
         {
-            Running = context.ReadValue<bool>();
+            Running = true;
 
         }
+       
         public void onLook(InputAction.CallbackContext context)
         {
             Look = context.ReadValue<Vector2>();
             
         }
+        public void onSystemSetting(InputAction.CallbackContext context) 
+        {
+            if (EscSetting == true) EscSetting = false;
 
-        // Bug at subscribe event Interact
-        // Use binding manually because can not subscribe event ( do not know why the script does not run the line subscribe event ) 
+            if (EscSetting == false) EscSetting = true;
+          
+        }
+        
         public void onInteract(InputAction.CallbackContext context)
         {
-           if ( context.performed) Interact = true;
-           if ( context.canceled) Interact = false;
+            Interact = true;
         }
 
+        // ---------------------------------------- //
+
+        public void outRunning(InputAction.CallbackContext context)
+        {
+            Running = false;
+        }
+        public void outInteract(InputAction.CallbackContext context) 
+        {
+            Interact = false;
+        }
+       
     }
 }

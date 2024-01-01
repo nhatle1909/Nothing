@@ -33,7 +33,7 @@ namespace Assets.Script
         public void Player_Move()
         {
 
-            //speedMultiplier = InputManager.instance.Running ? 1.2f : 0.9f;
+            speedMultiplier = InputManager.instance.Running ? 2f : 1f;
 
             float xAxis = InputManager.instance.Move.x * speedMultiplier;
             float yAxis = InputManager.instance.Move.y * speedMultiplier;
