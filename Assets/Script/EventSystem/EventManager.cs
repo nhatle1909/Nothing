@@ -1,22 +1,28 @@
 ﻿using System;
+using Unity.Mathematics;
 using UnityEngine;
 
 namespace Assets.Script
 {
     public class EventManager : MonoBehaviour
     {
-        public event Action OpenDoor;
         public static EventManager instance;
+
+        public event Action<int> OpenDoor;
+        public event Action<int> PickupItem;
+       
         private void Awake()
         {
             instance = this;
         }
-        public void OpenDoorTrigger()
+        public void OpenDoorTrigger(int triggerId)
         {
-            OpenDoor?.Invoke();
+            OpenDoor?.Invoke(triggerId);
         }
-        // Use this for initialization
-
+        public void PickupItemTrigger(int triggerId) 
+        {
+            PickupItem?.Invoke(triggerId);
+        }
 
 
     }
