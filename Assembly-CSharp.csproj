@@ -58,8 +58,8 @@
     <Analyzer Include="D:\DevTools\Unity\Unity Editor\2022.3.10f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\EventSystem\PickupItem.cs" />
     <Compile Include="Assets\Script\Service\InputManager.cs" />
-    <Compile Include="Assets\Script\EventSystem\PickUpItem.cs" />
     <Compile Include="Assets\Script\CanvasScript\SettingsScript.cs" />
     <Compile Include="Assets\Script\EventSystem\OpenDoor.cs" />
     <Compile Include="Assets\Script\EventSystem\EventManager.cs" />
