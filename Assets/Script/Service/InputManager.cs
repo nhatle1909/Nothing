@@ -5,7 +5,6 @@ namespace Assets.Script
 {
     public class InputManager : MonoBehaviour
     {
-        // Remove uncessary subscriber
         [SerializeField] private PlayerInput inputManager;
 
         public static InputManager instance;
@@ -23,10 +22,11 @@ namespace Assets.Script
         private InputAction _escAction;
         private void Awake()
         {
-            if (instance == null)
+            if (instance == null) 
             {
                 instance = this;
             }
+
             _currentMap = inputManager.currentActionMap;
 
             _moveAction = _currentMap.FindAction("Move");
@@ -67,9 +67,8 @@ namespace Assets.Script
         public void onSystemSetting(InputAction.CallbackContext context) 
         {
             if (EscSetting == true) EscSetting = false;
-
-            if (EscSetting == false) EscSetting = true;
-          
+            else EscSetting = true;
+           
         }
         
         public void onInteract(InputAction.CallbackContext context)

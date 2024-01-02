@@ -251,7 +251,7 @@
                 {
                     "name": "",
                     "id": "cb4bebac-03ef-476f-97dc-814908500db4",
-                    "path": "<Keyboard>/escape",
+                    "path": "<Keyboard>/backquote",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",

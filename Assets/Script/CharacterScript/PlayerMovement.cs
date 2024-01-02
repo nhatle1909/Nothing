@@ -46,7 +46,7 @@ namespace Assets.Script
         public void CameraMove()
         {
             // Lock cursor in center of screen
-            Cursor.lockState = CursorLockMode.Locked;
+            
 
             //Get Input from mouse movement, not use InputAction ( Calculate is too tiring ) 
             var Mouse_X = Input.GetAxis("Mouse X") * mouseSensitivity * Time.smoothDeltaTime;
