@@ -1,5 +1,4 @@
 ﻿using System;
-using Unity.Mathematics;
 using UnityEngine;
 
 namespace Assets.Script
@@ -10,7 +9,7 @@ namespace Assets.Script
 
         public event Action<int> OpenDoor;
         public event Action<int> PickupItem;
-       
+
         private void Awake()
         {
             instance = this;
@@ -19,7 +18,7 @@ namespace Assets.Script
         {
             OpenDoor?.Invoke(triggerId);
         }
-        public void PickupItemTrigger(int triggerId) 
+        public void PickupItemTrigger(int triggerId)
         {
             PickupItem?.Invoke(triggerId);
         }
