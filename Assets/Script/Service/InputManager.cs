@@ -46,7 +46,7 @@ namespace Assets.Script
             _inventoryAction.performed += onInventory;
 
             _runningAction.canceled += outRunning;
-            _interactAction.canceled += outRunning;
+            _interactAction.canceled += outInteract;
 
 
 
@@ -60,7 +60,6 @@ namespace Assets.Script
         public void onRunning(InputAction.CallbackContext context)
         {
             Running = true;
-
         }
 
         public void onLook(InputAction.CallbackContext context)

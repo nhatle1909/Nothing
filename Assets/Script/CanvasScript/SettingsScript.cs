@@ -11,7 +11,7 @@ namespace Assets.Script.CanvasScript
         // Use this for initialization
         void Start()
         {
-
+            musicBar.value = audioSource.volume;
         }
 
         // Update is called once per frame
