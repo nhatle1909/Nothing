@@ -1143,8 +1143,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.769574, y: 4.7555614, z: 4.9693847}
-  m_Center: {x: 1.3070109, y: 0.00000020101378, z: 2.2967885}
+  m_Size: {x: 2.769574, y: 4.7555614, z: 8.789913}
+  m_Center: {x: 1.3070108, y: 0.00000019540562, z: 0.38652882}
 --- !u!114 &2415664804642377008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1159,6 +1159,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorID: 0
   triggerID: 0
+  isOpenDoor: 0
 --- !u!1001 &4697779116936640170
 PrefabInstance:
   m_ObjectHideFlags: 0
