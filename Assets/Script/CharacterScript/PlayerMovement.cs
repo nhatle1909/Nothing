@@ -32,7 +32,7 @@ namespace Assets.Script
         public void Player_Move()
         {
 
-            speedMultiplier = InputManager.instance.Running ? 2f : 1f;
+            speedMultiplier = InputManager.instance.Running ? 3f : 1.5f;
 
             float xAxis = InputManager.instance.Move.x * speedMultiplier;
             float yAxis = InputManager.instance.Move.y * speedMultiplier;
@@ -40,6 +40,7 @@ namespace Assets.Script
             moveDirection = new Vector3(xAxis, 0f, yAxis);
 
             rb.velocity = transform.TransformVector(moveDirection);
+            rb.AddForce(Vector3.down * 10f, ForceMode.Acceleration); // Gravity
         }
 
         public void CameraMove()
