@@ -26,7 +26,7 @@ namespace Assets.Script.EventSystem
         {
             if (triggerID == doorID)
             {
-                transform.localEulerAngles = new Vector3(0f, 65f, 0f);
+                transform.localEulerAngles = new Vector3(0f, -90f, 0f);
                 EventManager.instance.OpenDoor -= OpenDoorEvent;
                 EventManager.instance.CloseDoor += CloseDoorEvent;
             }

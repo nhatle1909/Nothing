@@ -62,6 +62,7 @@
     <Compile Include="Assets\Script\EventSystem\PickupItem.cs" />
     <Compile Include="Assets\Script\Service\InputManager.cs" />
     <Compile Include="Assets\Script\CanvasScript\SettingsScript.cs" />
+    <Compile Include="Assets\Script\Service\AnimationParameterManager.cs" />
     <Compile Include="Assets\Script\EventSystem\EventManager.cs" />
     <Compile Include="Assets\Script\CharacterScript\PlayerMovement.cs" />
     <Compile Include="Assets\Script\Service\PlayGame.cs" />
