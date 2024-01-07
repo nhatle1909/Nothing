@@ -15,7 +15,7 @@ C:/Users/ADMIN/PRU
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51562
+57790
 Successfully changed project path to: C:/Users/ADMIN/PRU
 C:/Users/ADMIN/PRU
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/ADMIN/PRU
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [11560] Host "[IP] 192.168.1.7 [Port] 0 [Flags] 2 [Guid] 361375592 [EditorId] 361375592 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-J99JN0E5) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [780] Host "[IP] 10.86.30.34 [Port] 0 [Flags] 2 [Guid] 74629678 [EditorId] 74629678 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-J99JN0E5) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [11560] Host "[IP] 192.168.1.7 [Port] 0 [Flags] 2 [Guid] 361375592 [EditorId] 361375592 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-J99JN0E5) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [780] Host "[IP] 10.86.30.34 [Port] 0 [Flags] 2 [Guid] 74629678 [EditorId] 74629678 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-J99JN0E5) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
-Refreshing native plugins compatible for Editor in 988.70 ms, found 9 plugins.
+Refreshing native plugins compatible for Editor in 619.36 ms, found 9 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.10f1 (ff3792e53c62)
 [Subsystems] Discovering subsystems at path D:/DevTools/Unity/Unity Editor/2022.3.10f1/Editor/Data/Resources/UnitySubsystems
@@ -71,532 +71,117 @@ Initialize mono
 Mono path[0] = 'D:/DevTools/Unity/Unity Editor/2022.3.10f1/Editor/Data/Managed'
 Mono path[1] = 'D:/DevTools/Unity/Unity Editor/2022.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/DevTools/Unity/Unity Editor/2022.3.10f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56924
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56004
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/DevTools/Unity/Unity Editor/2022.3.10f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: D:/DevTools/Unity/Unity Editor/2022.3.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: D:/DevTools/Unity/Unity Editor/2022.3.10f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: D:/DevTools/Unity/Unity Editor/2022.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.021565 seconds.
-- Loaded All Assemblies, in  1.204 seconds
+Registered in 0.028164 seconds.
+- Loaded All Assemblies, in  5.552 seconds
 Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 738 ms
+Android Extension - Scanning For ADB Devices 912 ms
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.763 seconds
-Domain Reload Profiling: 2967ms
-	BeginReloadAssembly (391ms)
+- Finished resetting the current domain, in  2.059 seconds
+Domain Reload Profiling: 7611ms
+	BeginReloadAssembly (396ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (2ms)
-	RebuildCommonClasses (114ms)
-	RebuildNativeTypeToScriptingClass (35ms)
-	initialDomainReloadingComplete (154ms)
-	LoadAllAssembliesAndSetupDomain (509ms)
-		LoadAssemblies (390ms)
+	RebuildCommonClasses (1385ms)
+	RebuildNativeTypeToScriptingClass (54ms)
+	initialDomainReloadingComplete (232ms)
+	LoadAllAssembliesAndSetupDomain (3483ms)
+		LoadAssemblies (398ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (502ms)
-			TypeCache.Refresh (497ms)
-				TypeCache.ScanAssembly (452ms)
-			ScanForSourceGeneratedMonoScriptInfo (2ms)
+		AnalyzeDomain (3472ms)
+			TypeCache.Refresh (3468ms)
+				TypeCache.ScanAssembly (2685ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (2ms)
-	FinalizeReload (1764ms)
+	FinalizeReload (2060ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1582ms)
+		SetupLoadedEditorAssemblies (1750ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (1066ms)
-			SetLoadedEditorAssemblies (11ms)
+			InitializePlatformSupportModulesInManaged (1385ms)
+			SetLoadedEditorAssemblies (8ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (9ms)
-			ProcessInitializeOnLoadAttributes (325ms)
-			ProcessInitializeOnLoadMethodAttributes (169ms)
+			BeforeProcessingInitializeOnLoad (6ms)
+			ProcessInitializeOnLoadAttributes (249ms)
+			ProcessInitializeOnLoadMethodAttributes (101ms)
 			AfterProcessingInitializeOnLoad (0ms)
-			EditorAssembliesLoaded (0ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  3.142 seconds
-Refreshing native plugins compatible for Editor in 21.36 ms, found 9 plugins.
+- Loaded All Assemblies, in 10.075 seconds
+Refreshing native plugins compatible for Editor in 44.31 ms, found 9 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-PRU
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.387 seconds
-Domain Reload Profiling: 6509ms
-	BeginReloadAssembly (396ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (16ms)
+- Finished resetting the current domain, in  6.439 seconds
+Domain Reload Profiling: 16518ms
+	BeginReloadAssembly (1299ms)
+		ExecutionOrderSort (1ms)
+		DisableScriptedObjects (75ms)
 		BackupInstance (0ms)
-		ReleaseScriptingObjects (1ms)
-		CreateAndSetChildDomain (57ms)
-	RebuildCommonClasses (100ms)
-	RebuildNativeTypeToScriptingClass (38ms)
-	initialDomainReloadingComplete (129ms)
-	LoadAllAssembliesAndSetupDomain (2458ms)
-		LoadAssemblies (1660ms)
+		ReleaseScriptingObjects (3ms)
+		CreateAndSetChildDomain (282ms)
+	RebuildCommonClasses (148ms)
+	RebuildNativeTypeToScriptingClass (56ms)
+	initialDomainReloadingComplete (290ms)
+	LoadAllAssembliesAndSetupDomain (8284ms)
+		LoadAssemblies (6779ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1024ms)
-			TypeCache.Refresh (845ms)
-				TypeCache.ScanAssembly (779ms)
-			ScanForSourceGeneratedMonoScriptInfo (131ms)
-			ResolveRequiredComponents (42ms)
-	FinalizeReload (3388ms)
+		AnalyzeDomain (2003ms)
+			TypeCache.Refresh (1773ms)
+				TypeCache.ScanAssembly (1534ms)
+			ScanForSourceGeneratedMonoScriptInfo (138ms)
+			ResolveRequiredComponents (85ms)
+	FinalizeReload (6441ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (2623ms)
+		SetupLoadedEditorAssemblies (5639ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (108ms)
-			SetLoadedEditorAssemblies (16ms)
+			InitializePlatformSupportModulesInManaged (151ms)
+			SetLoadedEditorAssemblies (26ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (675ms)
-			ProcessInitializeOnLoadAttributes (1453ms)
-			ProcessInitializeOnLoadMethodAttributes (361ms)
-			AfterProcessingInitializeOnLoad (9ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (22ms)
-Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 20.55 ms, found 9 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6788 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 137 unused Assets / (1.6 MB). Loaded Objects now: 7238.
-Memory consumption went from 255.0 MB to 253.4 MB.
-Total: 11.892700 ms (FindLiveObjects: 0.974600 ms CreateObjectMapping: 1.070800 ms MarkObjects: 7.956700 ms  DeleteObjects: 1.889000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 13583.278689 seconds.
-  path: Assets/Abandoned_Asylum/Textures/Wall_Wood_3_diffuse.png
-  artifactKey: Guid(73ce7e26356a4cf4194d6a002ca203a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Abandoned_Asylum/Textures/Wall_Wood_3_diffuse.png using Guid(73ce7e26356a4cf4194d6a002ca203a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '158eda9e427bb17c66e99505fb4ad96d') in 0.254105 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 4.578335 seconds.
-  path: Assets/Abandoned_Asylum/Textures/Wall_Wood_3_diffuse.png
-  artifactKey: Guid(73ce7e26356a4cf4194d6a002ca203a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Abandoned_Asylum/Textures/Wall_Wood_3_diffuse.png using Guid(73ce7e26356a4cf4194d6a002ca203a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd84469e51bb518fbacc5aa0f9edf8d38') in 0.041412 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 34.568862 seconds.
-  path: Assets/Abandoned_Asylum/Textures/Wall_Wood_3_diffuse.png
-  artifactKey: Guid(73ce7e26356a4cf4194d6a002ca203a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Abandoned_Asylum/Textures/Wall_Wood_3_diffuse.png using Guid(73ce7e26356a4cf4194d6a002ca203a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '885d1a3ce1a91101308dfc9e80215f3d') in 0.034003 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in 26.700 seconds
-Refreshing native plugins compatible for Editor in 141.84 ms, found 9 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-[MODES] ModeService[none].Initialize
-[MODES] ModeService[none].LoadModes
-[MODES] Loading mode Default (0) for mode-current-id-PRU
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in 39.174 seconds
-Domain Reload Profiling: 65839ms
-	BeginReloadAssembly (5620ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (146ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (2ms)
-		CreateAndSetChildDomain (997ms)
-	RebuildCommonClasses (1468ms)
-	RebuildNativeTypeToScriptingClass (527ms)
-	initialDomainReloadingComplete (1728ms)
-	LoadAllAssembliesAndSetupDomain (17320ms)
-		LoadAssemblies (17631ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (3796ms)
-			TypeCache.Refresh (270ms)
-				TypeCache.ScanAssembly (89ms)
-			ScanForSourceGeneratedMonoScriptInfo (2474ms)
-			ResolveRequiredComponents (1047ms)
-	FinalizeReload (39176ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (14185ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (252ms)
-			SetLoadedEditorAssemblies (55ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (2995ms)
-			ProcessInitializeOnLoadAttributes (10357ms)
-			ProcessInitializeOnLoadMethodAttributes (517ms)
-			AfterProcessingInitializeOnLoad (8ms)
+			BeforeProcessingInitializeOnLoad (584ms)
+			ProcessInitializeOnLoadAttributes (2857ms)
+			ProcessInitializeOnLoadMethodAttributes (1995ms)
+			AfterProcessingInitializeOnLoad (23ms)
 			EditorAssembliesLoaded (2ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (138ms)
-Script is not up to date after domain reload: guid(442c24ca7e1a877449477a4154f887f8) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Utils/PostProcessEffectRendererExtensions.cs") state(2)
-Script is not up to date after domain reload: guid(c235f7d2e7a5d3847b50e73fccc74bab) path("Packages/com.unity.postprocessing/Tests/Editor/PostProcessEditorTests.cs") state(2)
-Script is not up to date after domain reload: guid(75be0b76c5da33a41a2e679cfb7f453c) path("Packages/com.unity.postprocessing/PostProcessing/Editor/PostProcessDebugEditor.cs") state(2)
-Script is not up to date after domain reload: guid(eff4db1c9252e5247b661dec568df962) path("Packages/com.unity.postprocessing/PostProcessing/Editor/Utils/GlobalSettings.cs") state(2)
-Script is not up to date after domain reload: guid(44788f6e7bbf9174181bfe4689e66131) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Attributes/TrackballAttribute.cs") state(2)
-Script is not up to date after domain reload: guid(4da61023839a0604d834e6ffde67ad52) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Utils/PropertySheet.cs") state(2)
-Script is not up to date after domain reload: guid(de3d46fc4bda066408aeba6fb8e44d6a) path("Packages/com.unity.postprocessing/PostProcessing/Editor/Effects/MotionBlurEditor.cs") state(2)
-Script is not up to date after domain reload: guid(f8e5f5614c0d72445b292f4b16ab660b) path("Packages/com.unity.postprocessing/PostProcessing/Editor/Effects/ChromaticAberrationEditor.cs") state(2)
-Script is not up to date after domain reload: guid(4d506bd5da20d0248bfa343c6693d655) path("Packages/com.unity.postprocessing/PostProcessing/Editor/Tools/CubeLutAssetFactory.cs") state(2)
-Script is not up to date after domain reload: guid(6050e2d5de785ce4d931e4dbdbf2d755) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Effects/ChromaticAberration.cs") state(2)
-Script is not up to date after domain reload: guid(322fbe1dae0fe4a4e9645768b3944aae) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Monitors/LightMeterMonitor.cs") state(2)
-Script is not up to date after domain reload: guid(e81ec1796a6c9844f9ab3847494d7911) path("Packages/com.unity.postprocessing/PostProcessing/Editor/PostProcessEffectEditor.cs") state(2)
-Script is not up to date after domain reload: guid(4b0cd5ddb61a56b4f86ea0fd0a102fe7) path("Packages/com.unity.postprocessing/PostProcessing/Editor/Effects/DefaultPostProcessEffectEditor.cs") state(2)
-Script is not up to date after domain reload: guid(0f3902e2aa2609f47ab0c956e56ea0bf) path("Packages/com.unity.postprocessing/PostProcessing/Editor/Tools/VolumeFactory.cs") state(2)
-Script is not up to date after domain reload: guid(912e288507f1e724492c7c721fa1deb8) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Attributes/DisplayNameAttribute.cs") state(2)
-Script is not up to date after domain reload: guid(c387aa7210e2f324b85febd7211d6c9f) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Utils/XRSettings.cs") state(2)
-Script is not up to date after domain reload: guid(09e002b759745fa499d539b9021af38e) path("Packages/com.unity.postprocessing/PostProcessing/Editor/Utils/EditorUtilities.cs") state(2)
-Script is not up to date after domain reload: guid(ce0f0631fee52da41884853337cab99d) path("Packages/com.unity.postprocessing/PostProcessing/Editor/Utils/CurveEditor.cs") state(2)
-Script is not up to date after domain reload: guid(79092fbfc2fc7394aa0754682e3089f7) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/PostProcessBundle.cs") state(2)
-Script is not up to date after domain reload: guid(21c950a797aa518438786fc341790e14) path("Packages/com.unity.postprocessing/PostProcessing/Editor/Tools/DefineSetter.cs") state(2)
-Script is not up to date after domain reload: guid(5d05ae29f423ce241b6cddfe46280b4c) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Monitors/Monitor.cs") state(2)
-Script is not up to date after domain reload: guid(d4351734f8a0aaa42a51a99db92e92e2) path("Packages/com.unity.postprocessing/PostProcessing/Editor/Tools/ResourceAssetFactory.cs") state(2)
-Script is not up to date after domain reload: guid(75066207954ccc44aa9d134af49040de) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Effects/Dithering.cs") state(2)
-Script is not up to date after domain reload: guid(b94fcd11afffcb142908bfcb1e261fba) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Effects/MotionBlur.cs") state(2)
-Script is not up to date after domain reload: guid(4b42fa3a7c4baed49bb4f6a56dadc03f) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Utils/MeshUtilities.cs") state(2)
-Script is not up to date after domain reload: guid(1d2cae9d8c54de04fab072666ddd1e57) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Attributes/MinMaxAttribute.cs") state(2)
-Script is not up to date after domain reload: guid(8b9a305e18de0c04dbd257a21cd47087) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/PostProcessVolume.cs") state(2)
-Script is not up to date after domain reload: guid(9753335d6f48da542be1c720aa07bbf5) path("Packages/com.unity.postprocessing/PostProcessing/Editor/Attributes/DecoratorAttribute.cs") state(2)
-Script is not up to date after domain reload: guid(30f4b897495c7ad40b2d47143e02aaba) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/PostProcessResources.cs") state(2)
-Script is not up to date after domain reload: guid(a4b23776a3150a74ea5ad6271a3d8f15) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Utils/LogHistogram.cs") state(2)
-Script is not up to date after domain reload: guid(556797029e73b2347956b6579e77e05b) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Effects/DepthOfField.cs") state(2)
-Script is not up to date after domain reload: guid(4e487364a0cd33f4a9ef2ed93819d4d7) path("Packages/com.unity.postprocessing/PostProcessing/Editor/PostProcessVolumeEditor.cs") state(2)
-Script is not up to date after domain reload: guid(c564cc69bd8582a48b2e0a2090d28361) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Effects/ScalableAO.cs") state(2)
-Script is not up to date after domain reload: guid(3e4b5d9a1abab984cbe0cbdb31fca939) path("Packages/com.unity.postprocessing/PostProcessing/Editor/Tools/CubeLutAssetImporter.cs") state(2)
-Script is not up to date after domain reload: guid(599b4e72f6c212d40819cfde14826671) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Utils/HableCurve.cs") state(2)
-Script is not up to date after domain reload: guid(18ff20fea2d39cf428e31d3e75b4ae79) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/PostProcessManager.cs") state(2)
-Script is not up to date after domain reload: guid(d798d5719bf3b434eafb013385f872eb) path("Packages/com.unity.postprocessing/PostProcessing/Editor/Effects/ScreenSpaceReflectionsEditor.cs") state(2)
-Script is not up to date after domain reload: guid(26ed99f46b86df8449003e6ec0f65144) path("Packages/com.unity.postprocessing/PostProcessing/Editor/Decorators/TrackballDecorator.cs") state(2)
-Script is not up to date after domain reload: guid(67909952e72978b4ea41880509c936ff) path("Packages/com.unity.postprocessing/PostProcessing/Editor/Effects/AmbientOcclusionEditor.cs") state(2)
-Script is not up to date after domain reload: guid(279b45d82a92b4d4fa0b30d03486fa68) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Monitors/VectorscopeMonitor.cs") state(2)
-Script is not up to date after domain reload: guid(adb84e30e02715445aeb9959894e3b4d) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Effects/ColorGrading.cs") state(2)
-Script is not up to date after domain reload: guid(f8baf5b99881c054d90afcd1dffd11eb) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Utils/TextureFormatUtilities.cs") state(2)
-Script is not up to date after domain reload: guid(9b77c5407dc277943b591ade9e6b18c5) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Effects/LensDistortion.cs") state(2)
-Script is not up to date after domain reload: guid(69a4fc27499557744827c787d71fdf08) path("Packages/com.unity.postprocessing/PostProcessing/Editor/BaseEditor.cs") state(2)
-Script is not up to date after domain reload: guid(ac5668592895c1742a0c6e9d111f870b) path("Packages/com.unity.postprocessing/PostProcessing/Editor/Tools/ProfileFactory.cs") state(2)
-Script is not up to date after domain reload: guid(d65e486e4de6e5448a8fbb43dc8756a0) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Effects/Grain.cs") state(2)
-Script is not up to date after domain reload: guid(63007e9c3f71cad46a59f223a8b32d46) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Attributes/MinAttribute.cs") state(2)
-Script is not up to date after domain reload: guid(d82acb873f357d046901f9e9f888911a) path("Packages/com.unity.postprocessing/Tests/Runtime/PostProcessingRuntimeTests.cs") state(2)
-Script is not up to date after domain reload: guid(f79c8927d684af6499f512361e23bace) path("Packages/com.unity.postprocessing/PostProcessing/Editor/Effects/ColorGradingEditor.cs") state(2)
-Script is not up to date after domain reload: guid(e034505fdac568a45af53ec1cdb0fbb3) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Utils/PropertySheetFactory.cs") state(2)
-Script is not up to date after domain reload: guid(bc5d8aaf03e613843a0ecaff18e0dfbd) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/ParameterOverride.cs") state(2)
-Script is not up to date after domain reload: guid(b7733f6a6fd11474e8fc598901f90fab) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/PostProcessRenderContext.cs") state(2)
-Script is not up to date after domain reload: guid(28cff9aae95df994e98129a9b35627de) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Attributes/PostProcessAttribute.cs") state(2)
-Script is not up to date after domain reload: guid(948f4100a11a5c24981795d21301da5c) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/PostProcessLayer.cs") state(2)
-Script is not up to date after domain reload: guid(3051d2fb25301fa4a81e797109712feb) path("Packages/com.unity.postprocessing/PostProcessing/Editor/Effects/AutoExposureEditor.cs") state(2)
-Script is not up to date after domain reload: guid(e4026acd2810a474b9be96bbeb80b959) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Utils/ShaderIDs.cs") state(2)
-Script is not up to date after domain reload: guid(f48a0d4b798943a448e8d2e5d891133c) path("Packages/com.unity.postprocessing/PostProcessing/Editor/Utils/SerializedParameterOverride.cs") state(2)
-Script is not up to date after domain reload: guid(5a7e5d36c781f1a469ea8f981b785506) path("Packages/com.unity.postprocessing/PostProcessing/Editor/PostProcessEffectBaseEditor.cs") state(2)
-Script is not up to date after domain reload: guid(62e2b920ea5fcaa4982e7fc50bf690a8) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Effects/Fog.cs") state(2)
-Script is not up to date after domain reload: guid(b3f6f3f7c722b4544b97e3c75840aa33) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Effects/AutoExposure.cs") state(2)
-Script is not up to date after domain reload: guid(47feae56b7bdcf4499b96c2aa3c6ce07) path("Packages/com.unity.postprocessing/PostProcessing/Editor/Effects/BloomEditor.cs") state(2)
-Script is not up to date after domain reload: guid(48a79b01ea5641d4aa6daa2e23605641) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Effects/Bloom.cs") state(2)
-Script is not up to date after domain reload: guid(c3c112f1ddeedfe45839158cc4b148d4) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Utils/ColorUtilities.cs") state(2)
-Script is not up to date after domain reload: guid(d6ae47710b8593e41960a944bb29e6c3) path("Packages/com.unity.postprocessing/PostProcessing/Editor/Decorators/Decorators.cs") state(2)
-Script is not up to date after domain reload: guid(c687cf9a3e8607a4b991e6d445a2f9bf) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Utils/Spline.cs") state(2)
-Script is not up to date after domain reload: guid(2df5c9d441da8704c8eab449a2f79d85) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/PostProcessEffectSettings.cs") state(2)
-Script is not up to date after domain reload: guid(3ae5839b763bada47af0cca23c360452) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Utils/TargetPool.cs") state(2)
-Script is not up to date after domain reload: guid(efd3e892ff9d0b94c94e039ad5619e5d) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Effects/FastApproximateAntialiasing.cs") state(2)
-Script is not up to date after domain reload: guid(f59da4cf1b7dee244bc37fa6add23b00) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Effects/MultiScaleVO.cs") state(2)
-Script is not up to date after domain reload: guid(7a34fa72bd4185749832024e9c8010bf) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Effects/ScreenSpaceReflections.cs") state(2)
-Script is not up to date after domain reload: guid(c1cb7e9e120078f43bce4f0b1be547a7) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Effects/AmbientOcclusion.cs") state(2)
-Script is not up to date after domain reload: guid(a2ed510c13db63f4ea5749ef503a99b5) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Utils/RuntimeUtilities.cs") state(2)
-Script is not up to date after domain reload: guid(2c89984c2a3e6cd4492c6f695f07bae6) path("Packages/com.unity.postprocessing/PostProcessing/Editor/PostProcessLayerEditor.cs") state(2)
-Script is not up to date after domain reload: guid(70ea2ab329ffbac43a0a02daa61dbe6b) path("Packages/com.unity.postprocessing/PostProcessing/Editor/Attributes/PostProcessEditorAttribute.cs") state(2)
-Script is not up to date after domain reload: guid(e4732e1210a3d39459db8b431f866659) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/PostProcessEvent.cs") state(2)
-Script is not up to date after domain reload: guid(40b924e2dad56384a8df2a1e111bb675) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Effects/Vignette.cs") state(2)
-Script is not up to date after domain reload: guid(7758395f983044344b2c8ea743e956c3) path("Packages/com.unity.postprocessing/PostProcessing/Editor/Effects/LensDistortionEditor.cs") state(2)
-Script is not up to date after domain reload: guid(6b2666165a17bbd4e851c1382898651e) path("Packages/com.unity.postprocessing/PostProcessing/Editor/Decorators/AttributeDecorator.cs") state(2)
-Script is not up to date after domain reload: guid(1fcb2f1e4a7d9ba42bc5940a5611f302) path("Packages/com.unity.postprocessing/PostProcessing/Editor/PostProcessProfileEditor.cs") state(2)
-Script is not up to date after domain reload: guid(eb4c0b518e013c8418135b3bd8a91b6c) path("Packages/com.unity.postprocessing/PostProcessing/Editor/Effects/DepthOfFieldEditor.cs") state(2)
-Script is not up to date after domain reload: guid(3869d037332a74744a54736f00d62763) path("Packages/com.unity.postprocessing/PostProcessing/Editor/Effects/VignetteEditor.cs") state(2)
-Script is not up to date after domain reload: guid(d579562c49280d84cb532cd67d19da5d) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Monitors/WaveformMonitor.cs") state(2)
-Script is not up to date after domain reload: guid(f85e8d04208ed5145a521dd27d174830) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Utils/TextureLerper.cs") state(2)
-Script is not up to date after domain reload: guid(cce62646e6d421c41b0aa1c300fcd0fe) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Monitors/HistogramMonitor.cs") state(2)
-Script is not up to date after domain reload: guid(9f9fffe306f3969418c31ee836b6ffee) path("Packages/com.unity.postprocessing/PostProcessing/Editor/EffectListEditor.cs") state(2)
-Script is not up to date after domain reload: guid(c884467f149574e44b21c869b7fc3401) path("Packages/com.unity.postprocessing/PostProcessing/Editor/Utils/Styling.cs") state(2)
-Script is not up to date after domain reload: guid(314a03e1d67d9fb4b85926a765017e02) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/PostProcessDebugLayer.cs") state(2)
-Script is not up to date after domain reload: guid(5a7fc26078c70a6469392d9775f433be) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Effects/TemporalAntialiasing.cs") state(2)
-Script is not up to date after domain reload: guid(8e6292b2c06870d4495f009f912b9600) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/PostProcessProfile.cs") state(2)
-Script is not up to date after domain reload: guid(c520d478f3d2445429bd7ac9c92b03a3) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/PostProcessDebug.cs") state(2)
-Script is not up to date after domain reload: guid(8c72b20f77adb59439f8eed4f25a950a) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Attributes/MaxAttribute.cs") state(2)
-Script is not up to date after domain reload: guid(5cfe6169b379ff84eb9796502a1a144d) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/PostProcessEffectRenderer.cs") state(2)
-Script is not up to date after domain reload: guid(f3b0ecb61e2f1e54ebd4572178bfd8b1) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Effects/SubpixelMorphologicalAntialiasing.cs") state(2)
-Script is not up to date after domain reload: guid(616483d5bdbf13c43ae1b005134b8c11) path("Packages/com.unity.postprocessing/PostProcessing/Runtime/Utils/HaltonSeq.cs") state(2)
+		AwakeInstancesAfterBackupRestoration (24ms)
 Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Refreshing native plugins compatible for Editor in 31.00 ms, found 9 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.30 seconds
+Refreshing native plugins compatible for Editor in 30.72 ms, found 9 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6740 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 81 unused Assets / (1.6 MB). Loaded Objects now: 7381.
-Memory consumption went from 231.4 MB to 229.8 MB.
-Total: 123.526000 ms (FindLiveObjects: 18.853900 ms CreateObjectMapping: 1.619500 ms MarkObjects: 71.752400 ms  DeleteObjects: 31.290800 ms)
+Unloading 7040 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 148 unused Assets / (2.8 MB). Loaded Objects now: 7480.
+Memory consumption went from 271.8 MB to 269.0 MB.
+Total: 30.987500 ms (FindLiveObjects: 1.661800 ms CreateObjectMapping: 1.342500 ms MarkObjects: 20.636900 ms  DeleteObjects: 7.341300 ms)
 
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in 10.095 seconds
-Refreshing native plugins compatible for Editor in 45.04 ms, found 9 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-[ScriptCompilation] NOT recompiling all scripts because this is an import worker process. Reason to compile was: Define symbols changed
-[MODES] ModeService[none].Initialize
-[MODES] ModeService[none].LoadModes
-[MODES] Loading mode Default (0) for mode-current-id-PRU
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in 106.356 seconds
-Domain Reload Profiling: 116454ms
-	BeginReloadAssembly (2935ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (132ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (3ms)
-		CreateAndSetChildDomain (1262ms)
-	RebuildCommonClasses (370ms)
-	RebuildNativeTypeToScriptingClass (350ms)
-	initialDomainReloadingComplete (913ms)
-	LoadAllAssembliesAndSetupDomain (5525ms)
-		LoadAssemblies (6224ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (530ms)
-			TypeCache.Refresh (220ms)
-				TypeCache.ScanAssembly (67ms)
-			ScanForSourceGeneratedMonoScriptInfo (200ms)
-			ResolveRequiredComponents (107ms)
-	FinalizeReload (106362ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (87407ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (483ms)
-			SetLoadedEditorAssemblies (45ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (1930ms)
-			ProcessInitializeOnLoadAttributes (83589ms)
-			ProcessInitializeOnLoadMethodAttributes (1334ms)
-			AfterProcessingInitializeOnLoad (15ms)
-			EditorAssembliesLoaded (5ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (446ms)
-Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Refreshing native plugins compatible for Editor in 98.87 ms, found 9 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6869 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 120 unused Assets / (4.9 MB). Loaded Objects now: 7493.
-Memory consumption went from 243.0 MB to 238.1 MB.
-Total: 157.477900 ms (FindLiveObjects: 9.214800 ms CreateObjectMapping: 7.690600 ms MarkObjects: 125.002500 ms  DeleteObjects: 15.565900 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in 13.425 seconds
-Refreshing native plugins compatible for Editor in 40.19 ms, found 9 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-[ScriptCompilation] NOT recompiling all scripts because this is an import worker process. Reason to compile was: Define symbols changed
-Error loading file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path C:\Users\ADMIN\PRU\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <787acc3c9a4c471ba7d971300105af24>:0 
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <787acc3c9a4c471ba7d971300105af24>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
-  at System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding, System.Boolean detectEncodingFromByteOrderMarks, System.Int32 bufferSize) [0x00055] in <787acc3c9a4c471ba7d971300105af24>:0 
-  at System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding, System.Boolean detectEncodingFromByteOrderMarks) [0x00000] in <787acc3c9a4c471ba7d971300105af24>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.StreamReader..ctor(string,System.Text.Encoding,bool)
-  at System.IO.File.InternalReadAllText (System.String path, System.Text.Encoding encoding) [0x00000] in <787acc3c9a4c471ba7d971300105af24>:0 
-  at System.IO.File.ReadAllText (System.String path, System.Text.Encoding encoding) [0x00034] in <787acc3c9a4c471ba7d971300105af24>:0 
-  at UnityEditor.StateCache`1[T].GetState (UnityEngine.Hash128 key, T defaultValue) [0x00041] in <fe7039efe678478d9c83e73bc6a6566d>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:GetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
-UnityEditor.Tools:OnEnable ()
-UnityEngine.ScriptableObject:CreateInstance (System.Type)
-UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Tools> ()
-UnityEditor.Tools:get_get ()
-UnityEditor.Tools:get_visibleLayers ()
-UnityEditor.Animations.Rigging.BoneRendererUtils:.cctor () (at ./Library/PackageCache/com.unity.animation.rigging@1.2.1/Editor/Utils/BoneRendererUtils.cs:121)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-(Filename: ./Library/PackageCache/com.unity.animation.rigging@1.2.1/Editor/Utils/BoneRendererUtils.cs Line: 121)
-
-[MODES] ModeService[none].Initialize
-[MODES] ModeService[none].LoadModes
-[MODES] Loading mode Default (0) for mode-current-id-PRU
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in 10.513 seconds
-Domain Reload Profiling: 23929ms
-	BeginReloadAssembly (1119ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (72ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (3ms)
-		CreateAndSetChildDomain (451ms)
-	RebuildCommonClasses (205ms)
-	RebuildNativeTypeToScriptingClass (80ms)
-	initialDomainReloadingComplete (136ms)
-	LoadAllAssembliesAndSetupDomain (11875ms)
-		LoadAssemblies (8933ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (3323ms)
-			TypeCache.Refresh (3008ms)
-				TypeCache.ScanAssembly (2505ms)
-			ScanForSourceGeneratedMonoScriptInfo (179ms)
-			ResolveRequiredComponents (125ms)
-	FinalizeReload (10515ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (3517ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (186ms)
-			SetLoadedEditorAssemblies (29ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (824ms)
-			ProcessInitializeOnLoadAttributes (2110ms)
-			ProcessInitializeOnLoadMethodAttributes (349ms)
-			AfterProcessingInitializeOnLoad (16ms)
-			EditorAssembliesLoaded (4ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (119ms)
-Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Refreshing native plugins compatible for Editor in 30.55 ms, found 9 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6869 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 120 unused Assets / (5.0 MB). Loaded Objects now: 7511.
-Memory consumption went from 243.2 MB to 238.2 MB.
-Total: 73.295800 ms (FindLiveObjects: 3.542000 ms CreateObjectMapping: 1.418900 ms MarkObjects: 39.143100 ms  DeleteObjects: 29.188900 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Refreshing native plugins compatible for Editor in 17.45 ms, found 9 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 57 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 57 unused Assets / (5.1 MB). Loaded Objects now: 7511.
-Memory consumption went from 138.9 MB to 133.8 MB.
-Total: 13.463600 ms (FindLiveObjects: 0.933700 ms CreateObjectMapping: 1.120200 ms MarkObjects: 7.729100 ms  DeleteObjects: 3.678800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: d54d2f2da18e7612c182cf67624b6b12 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 983.999540 seconds.
-  path: Assets/Abandoned_Asylum/Textures/Tiled/Tiles/Tiles_10_Albedo.png
-  artifactKey: Guid(df3807424ceba204c8b7a03170062118) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Abandoned_Asylum/Textures/Tiled/Tiles/Tiles_10_Albedo.png using Guid(df3807424ceba204c8b7a03170062118) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32d6ae15345a45b7c1cf56113b719c3d') in 0.402188 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Prepare
-Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
-Refreshing native plugins compatible for Editor in 29.79 ms, found 9 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 57 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 57 unused Assets / (5.0 MB). Loaded Objects now: 7512.
-Memory consumption went from 137.8 MB to 132.8 MB.
-Total: 756.781800 ms (FindLiveObjects: 9.357200 ms CreateObjectMapping: 1.454500 ms MarkObjects: 740.744200 ms  DeleteObjects: 5.219400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
