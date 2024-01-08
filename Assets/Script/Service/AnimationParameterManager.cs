@@ -11,5 +11,6 @@ namespace Assets.Script
         public static string Running = "isRunning";
         public static string HorizonAxis = "X";
         public static string VerticalAxis = "Y";
+        public static string Attack = "isAttack";
     }
 }

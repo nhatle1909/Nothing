@@ -38,9 +38,9 @@ namespace Assets.Script
 
             speedMultiplier = InputManager.instance.Running ? 3f : 1.5f;
 
-            xAxis = InputManager.instance.Move.x * speedMultiplier;
-            yAxis = InputManager.instance.Move.y * speedMultiplier;
-            moveDirection = new Vector3(xAxis, 0f, yAxis);
+            xAxis = InputManager.instance.Move.x ;
+            yAxis = InputManager.instance.Move.y ;
+            moveDirection = new Vector3(xAxis*speedMultiplier, 0f, yAxis*speedMultiplier) ;
 
             rb.velocity = transform.TransformVector(moveDirection);
             rb.AddForce(Vector3.down * 10f, ForceMode.Acceleration); // Gravity
@@ -58,6 +58,9 @@ namespace Assets.Script
             animator.SetBool(AnimationParameterManager.Running, moveDirection != Vector3.zero);
             animator.SetFloat(AnimationParameterManager.HorizonAxis,xAxis);
             animator.SetFloat(AnimationParameterManager.VerticalAxis,yAxis);
+
+            if (InputManager.instance.Attack == true) animator.SetTrigger(AnimationParameterManager.Attack);
+          
         }
     
     }

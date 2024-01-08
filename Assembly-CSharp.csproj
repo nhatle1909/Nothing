@@ -60,18 +60,29 @@
   <ItemGroup>
     <Compile Include="Assets\Script\Service\RenderCamera.cs" />
     <Compile Include="Assets\Script\EventSystem\PickupItem.cs" />
+    <Compile Include="Assets\Asset\Character\RFA\Common\Scripts\Combat.cs" />
+    <Compile Include="Assets\Asset\Character\RFA\Common\Scripts\Aiming.cs" />
     <Compile Include="Assets\Script\Service\InputManager.cs" />
+    <Compile Include="Assets\AIScript.cs" />
+    <Compile Include="Assets\Asset\Character\RFA\Common\Scripts\Movement.cs" />
+    <Compile Include="Assets\Asset\Character\RFA\Common\Plugins\NaughtyCharacter\Scripts\SpringArm.cs" />
+    <Compile Include="Assets\Asset\Character\RFA\Common\Scripts\PlayerInput.cs" />
+    <Compile Include="Assets\Asset\Character\RFA\Common\Scripts\AimingController.cs" />
+    <Compile Include="Assets\Asset\Character\RFA\Common\Scripts\Orbit.cs" />
     <Compile Include="Assets\Script\CanvasScript\SettingsScript.cs" />
     <Compile Include="Assets\Script\Service\AnimationParameterManager.cs" />
+    <Compile Include="Assets\Asset\Character\RFA\Common\Scripts\Jumping.cs" />
     <Compile Include="Assets\Script\EventSystem\EventManager.cs" />
     <Compile Include="Assets\Script\CharacterScript\PlayerMovement.cs" />
     <Compile Include="Assets\Script\Service\PlayGame.cs" />
     <Compile Include="Assets\Script\EventSystem\DoorEvent.cs" />
+    <Compile Include="Assets\Asset\Character\RFA\Common\Plugins\NaughtyCharacter\Scripts\PlayerCamera.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\Asset\Character\RFA\Readme.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
@@ -79,6 +90,7 @@
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\Asset\Character\RFA\Third-Party Notices.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
@@ -750,6 +762,9 @@
     <Reference Include="Unity.Burst.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.AI.Navigation">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.2D.Common.Path.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Common.Path.Editor.dll</HintPath>
     </Reference>
@@ -815,6 +830,9 @@
     </Reference>
     <Reference Include="Unity.Animation.Rigging">
       <HintPath>Library\ScriptAssemblies\Unity.Animation.Rigging.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
@@ -906,6 +924,9 @@
     <Reference Include="Unity.2D.Psdimporter.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.AI.Navigation.Updater">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll</HintPath>
+    </Reference>
     <Reference Include="Autodesk.Fbx">
       <HintPath>Library\ScriptAssemblies\Autodesk.Fbx.dll</HintPath>
     </Reference>
@@ -935,6 +956,9 @@
     </Reference>
     <Reference Include="Unity.Searcher.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>

@@ -14,6 +14,7 @@ namespace Assets.Script
         public bool Running { get; private set; }
         public bool EscSetting { get; private set; }
         public bool Inventory { get; private set; }
+        public bool Attack { get; private set; }
 
         private InputActionMap _currentMap;
         private InputAction _moveAction;
@@ -22,6 +23,7 @@ namespace Assets.Script
         private InputAction _interactAction;
         private InputAction _escAction;
         private InputAction _inventoryAction;
+        private InputAction _attackAction;
         private void Awake()
         {
             if (instance == null)
@@ -37,6 +39,7 @@ namespace Assets.Script
             _interactAction = _currentMap.FindAction("Interact");
             _escAction = _currentMap.FindAction("System");
             _inventoryAction = _currentMap.FindAction("Inventory");
+            _attackAction = _currentMap.FindAction("Attack");
 
             _moveAction.performed += onMove;
             _lookAction.performed += onLook;
@@ -44,10 +47,11 @@ namespace Assets.Script
             _interactAction.performed += onInteract;
             _escAction.performed += onSystemSetting;
             _inventoryAction.performed += onInventory;
+            _attackAction.performed += onAttack;
 
             _runningAction.canceled += outRunning;
             _interactAction.canceled += outInteract;
-
+            _attackAction.canceled += outAttack;
 
 
 
@@ -83,6 +87,10 @@ namespace Assets.Script
             Interact = true;
         }
 
+        public void onAttack(InputAction.CallbackContext context) 
+        {
+            Attack = true;
+        }
         // ---------------------------------------- //
 
         public void outRunning(InputAction.CallbackContext context)
@@ -92,6 +100,10 @@ namespace Assets.Script
         public void outInteract(InputAction.CallbackContext context)
         {
             Interact = false;
+        }
+        public void outAttack(InputAction.CallbackContext context)
+        {
+            Attack = false;
         }
 
     }
